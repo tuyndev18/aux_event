@@ -1,0 +1,50 @@
+.overlay_bg {
+  position: fixed;
+  inset: 0;
+  background: #1414149e;
+  cursor: pointer;
+}
+
+.menu-header {
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .menu-header {
+    position: fixed;
+    display: block;
+    left: 0;
+    height: 100vh;
+    background: #e8376c;
+    width: 80%;
+    padding: 20px;
+    transform: translate(-100%, 0);
+    transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .menu-header__active {
+    transform: translate(0, 0);
+  }
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  background: #ff7da4;
+  border-radius: 10px;
+}

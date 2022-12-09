@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <title>Nhận quà mỏi tay</title>
+</head>
+
+<body>
+  <section class="min-h-screen bg-[#e8376c]">
+    <header class="bg-[#e8376c] fixed top-0 w-full z-30">
+      <ul id="menu_header" class="z-50 menu-header">
+        <li
+          class="uppercase hover:-translate-y-1 text-lg px-5 py-3 transition-all duration-300 ease-in-out rounded-lg text-white cursor-pointer hover:bg-[#ff5d8e]">
+          trang chủ
+        </li>
+        <li
+          class="uppercase hover:-translate-y-1 text-lg px-5 py-3 transition-all duration-300 ease-in-out rounded-lg text-white cursor-pointer hover:bg-[#ff5d8e]">
+          hỗ trợ
+        </li>
+        <li
+          class="uppercase hover:-translate-y-1 text-lg px-5 py-3 transition-all duration-300 ease-in-out rounded-lg text-white cursor-pointer hover:bg-[#ff5d8e]">
+          panpage
+        </li>
+        <li class="hidden lg:block">
+          <img class="w-[170px] lg:w-[200px] h-[65px]" src="./assets/images/logo.png" alt="" />
+        </li>
+        <li
+          class="uppercase hover:-translate-y-1 text-lg px-5 py-3 transition-all duration-300 ease-in-out rounded-lg text-white cursor-pointer hover:bg-[#ff5d8e]">
+          instagram
+        </li>
+        <li
+          class="uppercase hover:-translate-y-1 text-lg px-5 py-3 transition-all duration-300 ease-in-out rounded-lg text-white cursor-pointer hover:bg-[#ff5d8e]">
+          tiktok
+        </li>
+        <li
+          class="uppercase hover:-translate-y-1 text-lg px-5 py-3 transition-all duration-300 ease-in-out rounded-lg text-white cursor-pointer hover:bg-[#ff5d8e]">
+          cộng đồng
+        </li>
+      </ul>
+      <div class="flex items-center justify-between px-4 py-2 lg:hidden">
+        <img class="w-[140px] lg:w-[210px] h-[55px]" src="./assets/images/logo.png" alt="" />
+        <img class="w-[40px] h-[40px] hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer"
+          src="./assets/images/menu_mobile.png" id="menu_mobile" alt="" />
+      </div>
+    </header>
+    <main class="aspect-[0.95] lg:aspect-[1.536] w-full relative overflow-hidden mt-[71px] lg:mt-[84px]">
+      <!-- background body -->
+      <div class="absolute inset-0">
+        <img class="hidden w-full h-full lg:block" src="./assets/images/background.png" alt="" />
+        <img class="block object-cover w-full h-full lg:hidden" src="./assets/images/background_tabnet.png" alt="" />
+      </div>
+      <!-- button chuyển đổi tab nhận thưởng -->
+      <div
+        class="absolute translate-x-[50%] sm:translate-x-[45%] lg:translate-x-[48.5%] bottom-[1.5%] sm:bottom-[3.5%] lg:bottom-[1%] right-1/2 w-[97vw] sm:w-[85vw] lg:w-[57vw] aspect-[0.88]">
+        <img class="w-full h-full" alt="" id="current_tab" />
+        <div class="top-[32%] left-[1.5%] absolute flex justify-between sm:static sm:block">
+          <div
+            class="static sm:absolute w-[32vw] sm:w-[23vw] lg:w-[18vw] aspect-video right-[13%] lg:right-[7%] translate-x-0 sm:translate-x-full  bottom-[38%] cursor-pointer hover:scale-110 hover:-translate-y-2 transition-all duration-200 ease-in-outease-in-quickly"
+            id="tab_mungtanthu">
+            <img class="w-full h-full" src="./assets/images/btn_mungtanthu.png" alt="" />
+          </div>
+          <div
+            class="static sm:absolute w-[32vw] sm:w-[23vw] lg:w-[18vw] aspect-video right-[12%] translate-x-0 sm:translate-x-full bottom-[23%] cursor-pointer hover:scale-110 hover:-translate-y-2 transition-all duration-200 ease-in-quickly"
+            id="tab_daple">
+            <img class="w-full h-full" src="./assets/images/btn_daple.png" alt="" />
+          </div>
+          <div
+            class="static sm:absolute w-[32vw] sm:w-[23vw] lg:w-[18vw] aspect-video right-[18%]  translate-x-0 sm:translate-x-full bottom-[8%] cursor-pointer hover:scale-110 hover:-translate-y-2 transition-all duration-200 ease-in-quickly"
+            id="tab_vucongvip">
+            <img class="w-full h-full" src="./assets/images/btn_vucongvip.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="absolute w-[9.5vw] sm:w-[7.5vw] lg:w-[6.5vw] aspect-square left-[27.5%] bottom-[10%] cursor-pointer hover:scale-110 hover:-translate-y-2 transition-all duration-200 ease-in-quickly">
+          <img class="w-full h-full" src="./assets/images/btn_recevice.png" alt="" />
+        </div>
+        <div
+          class="absolute w-[9.5vw] sm:w-[7.5vw] lg:w-[6.5vw] aspect-square left-[23%] bottom-[25.5%] cursor-pointer hover:scale-110 hover:-translate-y-2 transition-all duration-200 ease-in-quickly">
+          <img class="w-full h-full" src="./assets/images/btn_recevice.png" alt="" />
+        </div>
+        <div
+          class="absolute w-[9.5vw] sm:w-[7.5vw] lg:w-[6.5vw] aspect-square left-[18.5%] bottom-[41%] cursor-pointer hover:scale-110 hover:-translate-y-2 transition-all duration-200 ease-in-quickly">
+          <img class="w-full h-full" src="./assets/images/btn_recevice.png" alt="" />
+        </div>
+    </main>
+    <footer class="bg-[#e8376c]">
+      <div
+        class="flex flex-col items-center justify-center w-full max-w-3xl text-white px-5 pt-[50px] lg:pt-[90px] pb-[40px] lg:pb-[70px] mx-auto">
+        <h1 class="text-sm text-center lg:text-base">
+          Bản quyền thuộc công ty Hanbitsoft - Hàn Quốc, VTC Online phát hành
+          tại Việt Nam.
+        </h1>
+        <h1 class="text-sm text-center lg:text-base">
+          Giấy phép phê duyệt nội dung kịch bản trò chơi G1 trên mạng số
+          78/QD-BTTT cấp ngày 17/01/2020.
+        </h1>
+        <h1 class="text-sm text-center lg:text-base">
+          Trung tâm hỗ trợ : <a href="">hotro.goplay.vn</a> - Hotline: 1900 636 876
+        </h1>
+        <img class="my-6" src="./assets/images/logo.png" alt="" />
+        <img src="./assets/images/logo-brand.png" alt="" />
+      </div>
+    </footer>
+  </section>
+  <div class="z-10" id="overlay_bg"></div>
+  <script src="./assets/js/jquery-3.6.1.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
