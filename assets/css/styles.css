@@ -866,8 +866,8 @@ video {
   aspect-ratio: 1 / 1;
 }
 
-.h-\[65px\] {
-  height: 65px;
+.h-\[80px\] {
+  height: 80px;
 }
 
 .h-\[55px\] {
@@ -904,6 +904,10 @@ video {
 
 .w-\[97vw\] {
   width: 97vw;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-\[32vw\] {
@@ -2430,56 +2434,13 @@ video {
   content: var(--tw-content);
 }
 
-body {
-  margin: 0;
-  font-family: "UTM Avo", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-  font-family: "UTM Avo";
-
-  font-weight: 400;
-
-  src: local("UTM Avo"), url("./assets/fonts/UTM_Avo.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "UTM Avo";
-
-  font-weight: 700;
-
-  src: local("UTM Avo"),
-    url("./assets/fonts/UTM_AvoBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "UTM Avo";
-
-  font-weight: 600;
-
-  src: local("UTM Avo"),
-    url("./assets/fonts/UTM_AvoBold.ttf") format("truetype");
-}
-
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:-translate-x-2:hover {
-  --tw-translate-x: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:-translate-y-2:hover {
   --tw-translate-y: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-2:hover {
-  --tw-translate-y: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2603,8 +2564,8 @@ body {
     right: 7%;
   }
 
-  .lg\:mt-\[84px\] {
-    margin-top: 84px;
+  .lg\:mt-\[98px\] {
+    margin-top: 98px;
   }
 
   .lg\:block {

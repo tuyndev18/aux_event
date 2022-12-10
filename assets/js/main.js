@@ -16,11 +16,16 @@ $(document).ready(function () {
     $("#overlay_bg").removeClass("overlay_bg");
     $("#menu_header").removeClass("menu-header__active");
   });
+  
+//reload lại page khi xoay ngang màn hình
+  $(window).on("orientationchange", function () {
+    window.location.href = window.location.href;
+  });
 
   function renderTabList(currentTab) {
     $("#current_tab").attr("src", currentTab);
   }
-  renderTabList(TAB_LIST["qua_vu_cong_vip"]);
+  renderTabList(TAB_LIST["mung_tan_thu"]);
 
   $("#tab_mungtanthu").click(function () {
     renderTabList(TAB_LIST["mung_tan_thu"]);
