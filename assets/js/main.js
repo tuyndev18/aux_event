@@ -7,16 +7,7 @@ const TAB_LIST = {
 };
 
 $(document).ready(function () {
-  $("#menu_mobile").click(function () {
-    $("#overlay_bg").addClass("overlay_bg");
-    $("#menu_header").addClass("menu-header__active");
-  });
-
-  $("#overlay_bg").click(function () {
-    $("#overlay_bg").removeClass("overlay_bg");
-    $("#menu_header").removeClass("menu-header__active");
-  });
-  
+ 
 //reload lại page khi xoay ngang màn hình
   $(window).on("orientationchange", function () {
     window.location.href = window.location.href;
@@ -37,5 +28,15 @@ $(document).ready(function () {
 
   $("#tab_vucongvip").click(function () {
     renderTabList(TAB_LIST["qua_vu_cong_vip"]);
+  });
+  
+  $("#menu_mobile").click(function () {
+    $("#overlay_bg").toggleClass("overlay_bg");
+    $("#menu_header").toggleClass("menu-header__active");
+  });
+
+  $("#overlay_bg").click(function () {
+    $("#overlay_bg").removeClass("overlay_bg");
+    $("#menu_header").removeClass("menu-header__active");
   });
 });

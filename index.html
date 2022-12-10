@@ -12,7 +12,11 @@
 <body>
   <section class="min-h-screen bg-[#e8376c]">
     <header class="bg-[#e8376c] fixed top-0 w-full z-30">
-      <ul id="menu_header" class="z-50 menu-header">
+      <ul id="menu_header" class="menu-header">
+        <li class="flex px-5 pt-8 mb-4 space-x-4 text-xl font-bold text-white lg:pt-0 lg:hidden">  
+          <h1>HELLO:</h1>
+          <h3 class="flex-1 break-words line-clamp-1">NICK NAME</h3>
+        </li>
         <li
           class="uppercase hover:-translate-y-1 text-lg px-5 py-3 transition-all duration-300 ease-in-out rounded-lg text-white cursor-pointer hover:bg-[#ff5d8e]">
           trang chủ
@@ -40,12 +44,22 @@
           class="uppercase hover:-translate-y-1 text-lg px-5 py-3 transition-all duration-300 ease-in-out rounded-lg text-white cursor-pointer hover:bg-[#ff5d8e]">
           cộng đồng
         </li>
+        <li class="flex mt-[5vw] space-x-4 lg:hidden">
+          <button>
+            <img src="./assets/images/btn_dangxuat.png" alt="">
+          </button>
+          <div><img src="./assets/images/btn_napruby.png" alt=""></div>
+        </li>
       </ul>
       <!-- menu trên điện thoại -->
       <ul class="flex items-center justify-between px-4 py-2 lg:hidden">
         <img class="w-[140px] lg:w-[210px] h-[55px]" src="./assets/images/logo.png" alt="" />
-        <img class="w-[40px] h-[40px] hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer"
-          src="./assets/images/menu_mobile.png" id="menu_mobile" alt="" />
+        <div class="flex items-center space-x-5">
+          <h1 class="font-bold text-white">RUBY: <span>XXXX</span></h1>
+          <img class="w-[40px] h-[40px] hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer"
+            src="./assets/images/menu_mobile.png" id="menu_mobile" alt="" />
+        </div>
+        </div>
       </ul>
     </header>
     <main class="aspect-[0.95] lg:aspect-[1.536] w-full relative overflow-hidden mt-[71px] lg:mt-[98px]">
@@ -54,6 +68,22 @@
         <img class="hidden w-full h-full lg:block" src="./assets/images/background.png" alt="" />
         <img class="block object-cover w-full h-full lg:hidden" src="./assets/images/background_tabnet.png" alt="" />
       </div>
+      <!-- thông tin tài khoản -->
+      <div
+        class="hidden absolute w-[20vw] text-[#ee4c67] font-bold text-[26px] top-[17%] right-[4%] lg:flex flex-col items-center">
+        <div class="flex mb-4 space-x-4">
+          <h1>HELLO </h1>
+          <h3 class="flex-1 px-4 line-clamp-1">NICK NAME NICK NAME NICK NAME NICK NAME NICK NAME</h3>
+        </div>
+        <h1 class="pb-[22%]">RUBY <span>XXXX</span></h1>
+        <div class="flex space-x-4">
+          <button>
+            <img src="./assets/images/btn_dangxuat.png" alt="">
+          </button>
+          <div><img src="./assets/images/btn_napruby.png" alt=""></div>
+        </div>
+      </div>
+      <!-- thông tin tab -->
       <div
         class="absolute translate-x-[50%] sm:translate-x-[45%] lg:translate-x-[48.5%] bottom-[1.5%] sm:bottom-[3.5%] lg:bottom-[1%] right-1/2 w-[97vw] sm:w-[85vw] lg:w-[57vw] aspect-[0.88]">
         <!-- background nhận thưởng -->
@@ -91,6 +121,7 @@
             <img class="w-full h-full" src="./assets/images/btn_recevice.png" alt="" />
           </button>
         </div>
+      </div>
     </main>
     <footer class="bg-[#e8376c]">
       <div
